@@ -22,4 +22,8 @@ print(numeroDecimalLargo)
 # 5 Boolean
 booleano = True
 print(booleano)
+# --- Entrada parte del usuario con definicion de tipo de dato primitivo ---
+entradaUsuarioNombre = input('Ingresa tu nombre')
+print('Tu nombre es ', entradaUsuarioNombre)
+edad = input('Tu edad es ')
 ## Desarrollado por DEIVID VELASQUEZ GUTIERREZ - 1096701633

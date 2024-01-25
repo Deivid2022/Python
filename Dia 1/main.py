@@ -76,5 +76,18 @@ def obtener_mensaje():
 # Ejemplo de uso de la función
 saludo = obtener_mensaje()
 print(saludo)
+# ---- Arreglos ----
 
+numeros = [1, 2, 3, 4, 5]
+print("Secuencia inicial :", numeros)
+numeros[2] = 10
+print("secuencia modificada :", numeros)
+numeros.append(6)
+print("Secuencia nuevo numero :", numeros)
+longitud = len(numeros)
+print("Longitud :", longitud)
+print("Digitos :")
+for numero in numeros:
+    print(numero)
+    
 ## Desarrollado por DEIVID VELASQUEZ GUTIERREZ - 1096701633

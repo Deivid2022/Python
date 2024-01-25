@@ -31,17 +31,50 @@ numeroFinal = int(entradaNumero)
 print('Tu edad es ', numeroFinal)
 # --- Ciclos ---
 # Ciclo for
+
 for i in range(5,10,2): #for contador in range(desde,hasta,pasos):
     print(i)
 # Ciclo while 
+
 booleanito = True
 while booleanito == True: #while condicion_a_cumplir:
     print('sigo vivo')
     booleanito = False
 # ---- Condicionales ----
+
 texto1 = 'campus'
 if texto1 == 'campus':
     print('Soy campus')
 else:
     print('No soy campus') 
+# --- Funciones ---
+# Sin parametros y sin retorno 
+
+def saludar():
+    print('Hola mundo')
+saludar()
+# Con parametros y sin retorno 
+
+def saludar(nombre):
+    print(f'Hola {nombre}, como estas?')
+saludar('Deivid') 
+
+# Con parametros y con retorno 
+def suma(a, b):
+    resultado = a + b
+    return resultado
+
+valor1 = int(input('num1 '))
+valor2 = int(input('num2 '))
+resultado_suma = suma(valor1, valor2)
+print(f"La suma de {valor1} y {valor2} es: {resultado_suma}")
+#Sin parametros y con retorno 
+def obtener_mensaje():
+    mensaje = "¡Hola, mundo!"
+    return mensaje
+
+# Ejemplo de uso de la función
+saludo = obtener_mensaje()
+print(saludo)
+
 ## Desarrollado por DEIVID VELASQUEZ GUTIERREZ - 1096701633

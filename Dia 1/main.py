@@ -80,10 +80,10 @@ print(saludo)
 
 numeros = [1, 2, 3, 4, 5]
 print("Secuencia inicial :", numeros)
-numeros[2] = 10
+numeros[2] = 13
 print("secuencia modificada :", numeros)
 numeros.append(6)
-print("Secuencia nuevo numero :", numeros)
+print("agregando nuevo numero :", numeros)
 longitud = len(numeros)
 print("Longitud :", longitud)
 print("Digitos :")

@@ -104,12 +104,19 @@ print(saludo)
 
 # ---- Arreglos ----
 
-numeros = [1, 2, 3, 4, 5]
+numeros = [7, 2, 3, 4, 5]
 print("Secuencia inicial :", numeros)
 numeros[2] = 13
 print("secuencia modificada :", numeros)
 numeros.append(6)
 print("agregando nuevo numero :", numeros)
+numeros.pop()
+print("secuencia eliminada la cola :", numeros)
+numeros.remove(2)
+print("secuencia eliminando un numero :", numeros)
+print(numeros.index(4)+1)
+numeros.sort()
+print("ordenadas ascendentemente :", numeros)
 longitud = len(numeros)
 print("Longitud :", longitud)
 print("Digitos :")

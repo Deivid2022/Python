@@ -24,9 +24,9 @@ def juego():
             print("¡Hasta luego! Gracias por usar mi sofware.")
             break
         elif num < secreto:
-            print(f'El número es mayor al que estoy pensando, llevas {numIntentos} intentos')
+            print(f'El número {num} es menor al que estoy pensando, llevas {numIntentos} intentos')
         else:
-            print(f'El número es menor al que estoy pensando, llevas {numIntentos} intentos')
+            print(f'El número {num} es mayor al que estoy pensando, llevas {numIntentos} intentos')
         
     if numIntentos == 10:
         print(f'Te quedaste sin oportunidades, la proxima lo hacer mejor :)')

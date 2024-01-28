@@ -1,48 +1,43 @@
 ## ---------------------
 ## ---- Ejercicio 1 ----
 ## ---------------------
+# Generador de la secuencia de Fibonacci
 def fibonacci(n):
     if n < 2:
         return n
     else: 
         return fibonacci(n-1) + fibonacci(n-2)
-    
+# Proceso en el que se va a definir el tamaño de la secuencia y si quieres salir o seguir
 def main():
     
     while True:
         try:
-            n = int(input("Ingrese hasta la posición que quieres observar la secuencia : "))
+            n = int(input("Ingrese hasta la posición que quieres observar la secuencia(Puedes ingresar el 0 si deseas salir) : "))
 
             if n < 0:
                 print('')
                 print('Por favor, ingrese un número entero.')
                 continue
+            if n == 0:
+                print('')
+                print('¡Hasta luego! Gracias por usar el software')
+                print('')
+                break
             print('')
             for x in range (n):
-                print(fibonacci(x))
+                print (f'#',x+1,': ',fibonacci(x))
+            print('')
         except ValueError:
             print('')
             print('Por favor, ingrese un número entero.')
             continue
-        
-        print('')
-        print('Coloca cualquier número diferente al 0 si quieres seguir')
-        print('')
-        decision2 = int(input('Coloca el 0 para salir del programa '))
-        print('')
-        if decision2 == 0:
-            decision2 = 0
-            print('')
-            print('¡Hasta luego! Gracias por usar el sofware.')
-            print('')
-            break
         decision = input('¿Desea continuar generando la secuencia de Fibonacci? (si/no): ').lower()
         print('')
         if decision == 'no':
-            decision2 = input('Coloca el 0 para salir del programa ')
-            print("¡Hasta luego! Gracias por usar el sofware.")
-            
+            print("¡Hasta luego! Gracias por usar el software.")
+            print('')
             break
+# Bienvenida y Dato cusioso sobre la secuencia de Fibonacci 
 print('Bienvenido usuario a la Secuencia de Fibonacci.')
 print('')
 print('''    La Secuencia de Fibonacci es una operación matematica que 
@@ -57,7 +52,7 @@ print('''    La sucesión de Fibonacci puede verse en múltiples elementos
     nombre al submarino más importante de la literatura universal en 
     «Veinte mil leguas de viaje submarino» de Julio Verne.''')
 print('')
-if  __name__ == '__main__':
-    main()
+# Desarrollo de la función
+main() 
     
 ## Desarrollado por DEIVID VELASQUEZ GUTIERREZ - 1096701633

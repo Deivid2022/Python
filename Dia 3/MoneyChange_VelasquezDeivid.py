@@ -16,7 +16,6 @@ if cantidad>= 1 and cantidad<=1000:
     # Definición del resultado de las variables de la función 
     monedas_10, monedas_5, monedas_1 = proceso(cantidad)
     print( monedas_10 + monedas_5 + monedas_1)
-    print(monedas_10 + monedas_5 + monedas_1, '= ',monedas_10,'+',monedas_5,'+',monedas_1)
 else: 
     print('exceeds the software limit')
     cantidad = False

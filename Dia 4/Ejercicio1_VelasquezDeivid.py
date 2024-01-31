@@ -1,3 +1,7 @@
+## -------------------------
+## ---- Ejercicio 1 ----
+## -------------------------
+
 def pares(T_n,n,k):
     ## set(crear lista)
     pairs=set() 
@@ -16,3 +20,5 @@ for case in range(T):
     rta = pares(T_n,n,k)
     
 print('case{}:{}'.format(case+1,rta))
+
+## Desarrollado por DEIVID VELASQUEZ GUTIERREZ - 1096701633

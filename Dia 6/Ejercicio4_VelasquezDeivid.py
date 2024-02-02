@@ -14,8 +14,8 @@ def ball_collide(bola1, bola2):
 # casos de prueba
 ## bola1 = (3, 4, 4)
 ## bola2 = (6, 8, 3)
-bola1 = map(int,input().split())
-bola2 = map(int,input().split())
+bola1 = map(int,input('Ingresa x, y, z de la bola 1 ').split())
+bola2 = map(int,input('Ingresa x, y, z de la bola 2 ').split())
 print(ball_collide(bola1, bola2))
 
 

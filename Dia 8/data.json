@@ -4,24 +4,24 @@
             {
                 "id": 4,
                 "nombre": "Adrian",
-                "apellido1": "Su\u00c3\u00a1rez",
-                "ciudad": "Ja\u00c3\u00a9n",
+                "apellido1": "Suarez",
+                "ciudad": "Jaen",
                 "categoria": 300
             },
             {
                 "id": 5,
                 "nombre": "Marcos",
                 "apellido1": "Loyola",
-                "apellido2": "M\u00c3\u00a9ndez",
-                "ciudad": "Almer\u00c3\u00ada",
+                "apellido2": "Mendez",
+                "ciudad": "Almeria",
                 "categoria": 200
             },
             {
                 "id": 6,
-                "nombre": "Mar\u00c3\u00ada",
+                "nombre": "Maria",
                 "apellido1": "Santana",
                 "apellido2": "Moreno",
-                "ciudad": "C\u00c3\u00a1diz",
+                "ciudad": "Cadiz",
                 "categoria": 100
             },
             {
@@ -42,8 +42,8 @@
             {
                 "id": 9,
                 "nombre": "Guillermo",
-                "apellido1": "L\u00c3\u00b3pez",
-                "apellido2": "G\u00c3\u00b3mez",
+                "apellido1": "Lopez",
+                "apellido2": "Gomez",
                 "ciudad": "Granada",
                 "categoria": 225
             },
@@ -97,15 +97,15 @@
             {
                 "id": 6,
                 "nombre": "Manuel",
-                "apellido1": "Dom\u00c3\u00adnguez",
-                "apellido2": "Hern\u00c3\u00a1ndez",
+                "apellido1": "Dominguez",
+                "apellido2": "Hernandez",
                 "comision": 0.13
             },
             {
                 "id": 7,
                 "nombre": "Antonio",
                 "apellido1": "Vega",
-                "apellido2": "Hern\u00c3\u00a1ndez",
+                "apellido2": "Hernandez",
                 "comision": 0.11
             },
             {

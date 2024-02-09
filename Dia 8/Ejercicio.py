@@ -127,6 +127,5 @@ while True:
     break
   else:
     print('Esta posicion no se encuentra')
-  
     
   

@@ -246,7 +246,7 @@ def eliminar_pedidos():
     datos = json.load(miVariable)
     pedidos = datos['ventas']['pedidos']
     
-    id_json = int(input('Ingresa el id del comercial que quieras eliminar: '))
+    id_json = int(input('Ingresa el id del pedido que quieras eliminar: '))
     
     for pedido in pedidos:
         if pedido['id'] == id_json:

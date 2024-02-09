@@ -6,10 +6,6 @@ def cargar_json(Archivo_json):
     data = json.load(Archivo)
   return data 
 
-def guardar_json(datos):
-  with open(Archivo_json, 'w') as Archivo:
-    Archivo.write(datos)
-
 def fechas_recientes(Archivo_json):
   data = cargar_json(Archivo_json)
   pedidos = data['ventas']['pedidos']
@@ -85,53 +81,7 @@ def comerciales_Ruiz(Archivo_json):
     if 'Ruiz' in comercial.values():
       comerciales_ruiz.add(comercial['nombre'])
   return list(comerciales_ruiz)
-
-def clientes(Archivo_json):
-  data = cargar_json(Archivo_json)
-  clientes = data['ventas']['clientes']
-  for i in clientes:
-    print(i)
-
-def comerciales(Archivo_json):
-  data = cargar_json(Archivo_json)
-  comerciales = data['ventas']['comerciales']
-  for i in comerciales:
-    print(i)
-
-def pedidos(Archivo_json):
-  data = cargar_json(Archivo_json)
-  pedidos = data['ventas']['pedidos']
-  for i in pedidos :
-    print(i)
-    
-def modificar_clientes(Archivo_json, id_json):
-  data = cargar_json(Archivo_json)
-  clientes = data['ventas']['clientes']
-  print('Datos actuales:')
-  for i in clientes:
-    print(i)
-  for cliente in clientes:
-    if cliente['id'] == id_json:
-      id = int(input('Ingresa el nuevo id: '))
-      nombre = input('Ingresa el nuevo nombre: ')
-      apellido1 = input('Ingesa el nuevo apellido1: ')
-      apellido2 = input('Ingresa el nuevo apellido2: ')
-      ciudad = input('Ingresa la nueva ciudad: ')
-      categoria = int(input('Ingresa la nueva categoria: '))
-      clientes['id'] = id
-      clientes['nombre'] = nombre
-      clientes['apellido1'] = apellido1
-      clientes['apellido2'] = apellido2
-      clientes['ciudad'] = ciudad
-      clientes['categoria'] = categoria
   
-  guardar_json(clientes)
-  
-def menu2():
-  print('1. Ejecutar')
-  print('2. Modificar')
-  
-
 def menu():
   print('1. Devuelve un listado con todos los pedidos que se han realizado')
   print('2. Devuelve todos los datos de los dos pedidos de mayor valor.')
@@ -143,19 +93,9 @@ def menu():
   print('8. Devuelve un listado de los nombres de los clientes que empiezan por A y terminan por n y también los nombres que empiezan por P. ')
   print('9. Devuelve un listado de los nombres de los clientes que  empiezan por A.')
   print('10. Devuelve un listado con los nombres de los comerciales que tienen como apellido "Ruiz".')
-  print('11. Devuelve un listado de los clientes')
-  print('12. Devuelve un listado de los comerciales')
-  print('13. Devuelve un listado de los pedidos')
 
 Archivo_json = 'data.json'
 while True:
-  menu2()
-  num1 = input('Ingrese la posicion de lo que deseas hacer ')
-  if num1 == '1':
-    menu()
-    num = input('Escribe la posición de lo que quieras ver ')
-  
-<<<<<<< HEAD
   menu()
   num = input('Escribe la posición de lo que quieras ver(escribe salir si lo deseas) ')
   
@@ -184,41 +124,3 @@ while True:
     break
   else:
     print('Esta posicion no se encuentra')
-=======
-    if num == '1': 
-      fechas_recientes(Archivo_json)
-    elif num == '2':
-      Mayor_Valor(Archivo_json)
-    elif num == '3': 
-      print(indentificadores_clientes(Archivo_json))
-    elif num == '4':
-      pedidos_2017_mayor_500(Archivo_json)
-    elif num == '5':
-      comerciales_comision(Archivo_json)
-    elif num == '6':
-      print(comision_MayorValor(Archivo_json))
-    elif num == '7':
-      clientes_sevilla(Archivo_json)
-    elif num == '8':
-      print(clientes_An(Archivo_json))
-    elif num == '9':
-      print(clientes_A(Archivo_json))
-    elif num == '10':
-      print(comerciales_Ruiz(Archivo_json))
-    elif num == '11':
-      clientes(Archivo_json)
-    elif num == '12':
-      comerciales(Archivo_json)
-    elif num == '13':
-      pedidos(Archivo_json)
-    else:
-      print('Esta posicion no se encuentra')
-  elif num1 == '2':
-    ccp = input('ingresa la posición del que quieras modificar ')
-    if ccp == '1':
-      modificar_clientes(Archivo_json)
-      
-  
->>>>>>> dffe93a539ecfe4e4985a5a05e6909f455c6be67
-    
-  
